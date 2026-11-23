@@ -1871,6 +1871,15 @@ html.js .tl5-c.rv.in:hover{transform:translateY(-6px);transition-delay:0s}
 #showcase.isec{padding-top:clamp(30px,3vw,50px)}
 #showcase .sec-h{margin-bottom:clamp(24px,3vw,40px);padding-top:clamp(30px,3vw,48px);border-top:1px solid var(--esp)}
 #showcase .feat{margin-top:0}
+/* freelancing, below the internship showcase */
+.ovs-mock img[src*="salma/devices"]{mix-blend-mode:multiply}
+#showcase.isec{padding-bottom:clamp(30px,3vw,50px)}
+#freelance.isec{padding-top:clamp(30px,3vw,50px)}
+#freelance .sec-h{display:grid;grid-template-columns:minmax(0,1fr);margin-bottom:clamp(24px,3vw,40px);padding-top:clamp(30px,3vw,48px);border-top:1px solid var(--esp)}
+#freelance .sec-h h2{font-size:clamp(44px,5.2vw,84px);line-height:.98;max-width:24ch}
+#freelance .feat{margin-top:0}
+#freelance .fl-p{background:#dfe8f2}
+#freelance .fl-p .feat-img{object-position:50% 20%}
 </style>
 
 <div class="bgfx" aria-hidden="true"><div class="bgfx-p" id="bgp"><div class="bgfx-t"></div><div class="shd a"></div><div class="shd b"></div><div class="shd c"></div></div><div class="lgt" id="lgt"></div><div class="vgn"></div></div>
@@ -1897,7 +1906,6 @@ html.js .tl5-c.rv.in:hover{transform:translateY(-6px);transition-delay:0s}
       <li><a href="#skills" data-sec="skills">Skills</a></li>
       <li><a href="#certificates" data-sec="certificates">Certificates</a></li>
       <li><a href="#work" data-sec="work">Work</a></li>
-      <li><a href="#internship">Internship</a></li>
       <li><a href="#contact" data-sec="contact">Contact</a></li>
     </ul>
     <button class="mnav intro-hide" id="mnav" type="button" aria-expanded="false" aria-controls="nav"><span>Menu</span><i></i></button>
@@ -2007,9 +2015,18 @@ html.js .tl5-c.rv.in:hover{transform:translateY(-6px);transition-delay:0s}
     </div>
   </section>
 
+  <section class="isec tx tx-l" id="freelance">
+    <div class="wrap">
+      <div class="sec-h">
+        <div><span class="lab rv">07 / Freelancing</span><h2 class="rv" style="margin-top:22px">Independent work, <span class="ital">from brand to build.</span></h2></div>
+      </div>
+      <a class="feat tx tx-d dark rv" href="#p-salmawael"><div class="feat-t"><span class="lab">Freelance · Logo, visual identity and website</span><h4>Salma Wael</h4><p class="feat-sub">E-Portfolio</p><p>A personal e-portfolio for a Mechanical Engineering student at UDST. I created her logo and visual identity, then designed and built the website around them.</p><ul class="feat-f"><li><em>Client</em>Salma Wael</li><li><em>Scope</em>Logo, visual identity, UI/UX and front-end</li><li><em>Status</em>Live and public</li></ul><span class="btn">View the project</span></div><div class="feat-p fl-p"><img class="feat-img" src="salma/hero.webp" alt="Salma Wael's e-portfolio home page" loading="lazy"></div></a>
+    </div>
+  </section>
+
   <section class="contact tx tx-b dark" id="contact">
     <div class="wrap ct2">
-      <div class="ct2-h"><span class="lab rv">07 / Contact</span>
+      <div class="ct2-h"><span class="lab rv">08 / Contact</span>
       <h2 class="rv">Let's build something that <span class="ital">connects.</span></h2>
       <p class="rv">Have a project in mind, an opportunity to discuss or simply want to connect? I&#39;d love to hear from you.</p><a class="btn cvbtn rv" id="cvbtn" href="#contact" data-cv=""><span>View my CV</span><i aria-hidden="true">&#8599;</i></a></div>
       <div class="crows rv" id="crows"></div>
@@ -2408,11 +2425,12 @@ var P=[
  meta:[['Category','Real estate website and admin dashboard'],['Client','TAM Real Estate'],['Website','tam.com.qa','https://tam.com.qa/en'],['Languages','English and Arabic'],['Role','Website design, front-end and requirements']],
  sections:[{"h": "Overview", "lead": true, "p": ["A corporate website and property platform for TAM Real Estate, which makes real estate investment in Qatar accessible by creating opportunities and building a better future for clients.", "I worked on developing the site in English and Arabic to give the company a professional online presence for its services, property portfolio and featured developments."]}, {"h": "My contributions", "sub": "Website and property platform", "items": ["Structured the website around Home, About, Our Projects, Services, Properties, Blogs and Contact.", "Organized company information, including its background, values and real estate services.", "Presented property marketing, brokerage, property management and investment consultancy services.", "Developed the featured project presentation for Al Wukair Walk: overview, location, facilities, amenities and image gallery.", "Worked on individual project pages and property detail layouts.", "Planned property browsing for rent and sale, with location filters and categories such as apartments, villas and compounds.", "Organized property information, images, prices, descriptions and locations.", "Added property enquiry, viewing request and WhatsApp contact options.", "Developed the Company Profile section and planned document access and downloads.", "Refined imagery, service cards, navigation, animations, scrolling and loading transitions.", "Updated footer information, social media links and the SayndTech credit."]}, {"h": "Administrative dashboard", "sub": "Property website administration", "p": ["I reviewed and improved the TAM Real Estate admin dashboard, adding features and refining how it works so the team can manage property information and website content."], "note": "The admin dashboard is a private, internal tool, so it cannot be shown publicly."}],
  links:[{label:'Visit tam.com.qa',url:'https://tam.com.qa/en'}]},
-{id:'yahya',grp:'intern',int:true,title:'Yahya Abu Najem',cat:'Personal portfolio',tag:'Website and business card',
+{id:'yahya',grp:'intern',int:true,title:'Yahya Abu Najem',cat:'Personal portfolio',tag:'Website, visual identity and business card',
  tagline:'A personal portfolio for the founder and CEO of TAM Holding Group.',
  cover:{bg:'esp',img:'mock-yahya.webp'},
- meta:[['Category','Personal website and business card'],['Client','Yahya Abu Najem'],['Website','yahyaabunajem.com','https://www.yahyaabunajem.com'],['Role','UI/UX design']],
- sections:[{h:'Overview',lead:true,p:["A personal portfolio for Yahya Abu Najem, Founder and CEO of TAM Holding Group. It opens on a portrait and a single line, \"Building businesses that matter\", and leads into the group and his story.","Alongside the website, I designed his business card so his print and digital presence share one identity."]},
+ meta:[['Category','Personal website, visual identity and business card'],['Client','Yahya Abu Najem'],['Website','yahyaabunajem.com','https://www.yahyaabunajem.com'],['Role','Visual identity, logo and UI/UX design']],
+ sections:[{h:'Overview',lead:true,p:["A personal portfolio for Yahya Abu Najem, Founder and CEO of TAM Holding Group. It opens on a portrait and a single line, \"Building businesses that matter\", and leads into the group and his story.","I created his visual identity and logo, then carried them through the design to the final look of the website.","Alongside the website, I designed his business card so his print and digital presence share one identity."]},
+  {h:'Visual identity and logo',sub:'Created from scratch',p:["I designed the YN monogram and the identity around it: deep green, ivory and gold, with refined typography that feels personal but fits the group.","The same identity runs through the website, from the first screen to the final layout, and through the business card, so everything reads as one brand."],chips:['Logo','Visual identity','Website design']},
   {h:'Business card',sub:'Print design',p:["A two-sided card in deep green, ivory and gold. The front carries a YN monogram with a small star above it, his name and TAM Holding Group in spaced gold capitals.","The back sets his name and title, Founder & CEO, above his phone numbers, email and location, with a soft calligraphic mark at the edge and a QR code labelled Connect with me."],chips:['Monogram','Typography','Print layout','QR code']}],
  figs:[{h:'The business card',full:true,kick:'Print design',items:[{img:'yahya-cards.webp',cap:'Front and back of the business card for Yahya Abu Najem, Founder & CEO of TAM Holding Group.'}]}],
  links:[{label:'Visit yahyaabunajem.com',url:'https://www.yahyaabunajem.com'}]},
@@ -2429,13 +2447,23 @@ var P=[
  sections:[
 {"h": "Overview", "lead": true, "p": ["SayndTech is a creative tech studio in Lusail, Doha, and a tech partner for websites, apps and AI solutions. The website opens on a single promise, \"We turn your ideas into AI solutions\", over a soft, iridescent background.", "I helped develop and structure the site in English and Arabic to showcase the company's services, capabilities, projects, partnerships and digital solutions."]}, {"h": "My contributions", "sub": "Corporate website", "items": ["Structured the website into Landing Page, About Us, Our Services, Our Work, Partnerships, Testimonials and Contact Us.", "Set the visual direction with the company's colour palette, iridescent pearl textures and subtle visual effects.", "Organized Our Services to communicate the company's technology capabilities.", "Developed Our Work to showcase projects including TAM Elite, Kafaat and Wezan.", "Planned dedicated project pages with descriptions, key features and full-background imagery.", "Organized Partnerships to show TAM Holding Group, TAM Oil & Gas, TAM Creativity, Cleany, TAM Real Estate, Zayam Investment and Codes & Colors.", "Added customer testimonials and a contact form.", "Structured the footer with social links and an official links page.", "Refined smooth scrolling, loading animations and transitions for a consistent experience."]}, {"h": "Services", "chips": ["Web Development", "Mobile Apps", "Artificial Intelligence", "UI/UX Design", "Cloud & DevOps", "Cybersecurity"]}, {"h": "Key messages", "pairs": [["Blazing Fast", "Lightning-fast loading."], ["Stunning Design", "Interfaces that captivate."], ["AI Powered", "Smart business solutions."]]}, {"h": "Administrative dashboard", "sub": "Private admin dashboard", "p": ["I defined the structure and functional requirements for a central dashboard to manage and maintain the SayndTech corporate website."], "pairs": [["Overview", "Website activity, pending inquiries, visitor statistics, recent updates and key performance indicators in one place."], ["Inquiries and leads", "Contact form submissions, lead assignment, inquiry status, internal notes, spam filtering and Excel exports."], ["Visitors and analytics", "Traffic, page views, visit duration, referral sources, locations, devices, browsers, language preferences and interactions."], ["Content management", "Website pages, company information, services, projects, articles, media and contact details."], ["Publishing and versions", "Publishing, editing, version history and restoring earlier versions."], ["Team management", "Administrator, editor and other roles with different access permissions."], ["Settings", "Email notifications, analytics settings, content preferences and dashboard accessibility."], ["English and Arabic", "Content managed in both languages so the two versions stay consistent."]], "after": ["The dashboard centralises website administration, streamlines content updates, improves inquiry management and gives insight into how the website performs."], "note": "The admin dashboard is a private, internal tool, so it cannot be shown publicly."},
  {"h": "Company profile", "sub": "Corporate presentation in Canva", "p": ["I created and refined the structure and look of the SayndTech company profile: the company overview, vision, mission, core values, services, technologies, development process, industries served, featured projects, competitive strengths and contact information.", "I refined the visual direction with glass-like effects, Lavender Haze accents, cleaner layouts and better image placement, and kept the presentation editable in Canva."], "note": "The company profile is an internal document, so it cannot be shown publicly."}
- ],links:[{label:'Visit sayndtech.com',url:'https://sayndtech.com/en'}]}
+ ],links:[{label:'Visit sayndtech.com',url:'https://sayndtech.com/en'}]},
+{id:'salmawael',grp:'free',title:"Salma Wael's E-Portfolio",cat:'Personal e-portfolio',tag:'Freelance · Logo, visual identity and website',
+ tagline:'A responsive e-portfolio styled like an engineering drawing sheet.',
+ cover:{bg:'pearl',img:'salma/devices.webp',mul:true},
+ badges:['Logo','Visual identity','UI/UX design','Front-end'],
+ meta:[['Category','Personal e-portfolio website'],['Client','Salma Wael, Mechanical Engineering student at UDST'],['Website','Salma-Wael-E-Portfolio','https://salmawael599-hash.github.io/Salma-Wael-E-Portfolio/'],['Role','Logo, visual identity, UI/UX and front-end']],
+ sections:[{h:'Overview',lead:true,p:["A one-page e-portfolio for Salma Wael, a Mechanical Engineering (Smart Manufacturing) student at UDST, with its own page for each of her projects. It is live and public, and it works on desktop, tablet and phone.","I created the whole thing: her SW logo, her visual identity and the website itself. The concept treats the site like an engineer's drawing sheet: cream paper, cobalt ink, gold accents and blueprint details, under her line \"Bringing theory into practice.\""]},
+  {h:'Logo and visual identity',sub:'Created from scratch',p:["I designed the SW monogram, an italic S overlapping a W, along with its rules: cobalt on cream by default, cream on cobalt for avatars and the favicon, and always with clear space around it.","The palette pairs cobalt, cream and croissant gold with a small pop of strawberry red, which appears only as the full stop after \"Wael.\", a sticker badge and the key button. I checked every text pairing against WCAG AA contrast. Cormorant Garamond sets the headings and DM Sans the body text."],chips:['SW monogram','Colour palette','Typography','Blueprint marks','UI kit','Brand voice'],note:"The visual identity files are confidential, so I can't share them here. Everything they define is visible on the live website."},
+  {h:'The website',sub:'UI/UX design and front-end',items:["A loading page where a caliper's jaw slides along a 0 to 100 scale as the counter fills.","A hero with a large \"Salma\" and \"Wael.\" around her cut-out portrait, a blueprint ring with tick marks and a gold dot.","About, experience and skills sections, a project carousel and a credentials grid whose certificates open full size.","A separate page for each project, with an overview, her contribution, the skills developed and a gallery.","A page transition where a grid sheet slides across while a blueprint circle draws around the SW logo."]},
+  {h:'Motion and detail',sub:'Smooth and accessible',p:["Smooth scrolling, a gold progress bar, a name that rises letter by letter and a portrait that reveals from the bottom. As you scroll, the About section slides over the hero like a sheet of paper.","None of the animations hide content, and visitors who turn off motion in their device settings see a still version."],chips:['Responsive','Scroll animation','Carousel','Reduced motion']}],
+ links:[{label:"Visit Salma Wael's e-portfolio",url:'https://salmawael599-hash.github.io/Salma-Wael-E-Portfolio/'}]}
 ];
 var byId={};P.forEach(function(p,i){byId[p.id]=p;p.i=i});
 var LOGOS={
  tamholding:['tamholding.webp','#f7f7f7','TAM Holding Group'],tamre:['tamre.webp','#ffffff','TAM Real Estate'],zayam:['zayam.webp','#ffffff','Zayam Investment'],
  cleany:['cleany.webp','#ffffff','Cleany'],sayndtech:['saynd.webp','#ffffff','SayndTech'],wezan:['wezan.webp','#f2eee3','Wezan'],kafaat:['kafaat.webp','#0f6e56','Kafaat'],vibefit:['vibefit.webp','#000000','VibeFit']};
-var MONO={vibefit:'vibefit-cream',udst:'udst',tamholding:'tamholding',tamre:'tamre',zayam:'zayam',cleany:'cleany',sayndtech:'saynd',wezan:'wezan',kafaat:'kafaat'};
+var MONO={salmawael:'salma',vibefit:'vibefit-cream',udst:'udst',tamholding:'tamholding',tamre:'tamre',zayam:'zayam',cleany:'cleany',sayndtech:'saynd',wezan:'wezan',kafaat:'kafaat'};
 function logoTile(id,cls){var l=LOGOS[id];if(!l)return '';return '<span class="ltile '+(cls||'')+'" style="background:'+l[1]+'"><img src="clients/'+l[0]+'" alt="'+esc(l[2])+' logo"></span>'}
 var INTERN=[
  {h:'Apps',sub:'Mobile apps',items:[['wezan'],['tamelite',{title:'TAM Elite app',cat:'Mobile app',tagline:'The members\' app: browse offers and unlock them at the outlet.'}]]},
@@ -2658,7 +2686,7 @@ function ovFig(p){
 }
 function renderProject(p){
   if(p.story){document.getElementById('project').innerHTML=storyHTML(p);return}
-  var h=pageHead(p.int?'#internship':'#work',p.int?'Internship work':'All projects',p.tag,p.title,p.tagline,p.meta,p.id==='vibefit'?'vibefit':(p.grp==='uni'||p.grp==='grad'?'udst':p.id));
+  var h=pageHead(p.int?'#internship':(p.grp==='free'?'#freelance':'#work'),p.int?'Internship work':(p.grp==='free'?'Freelancing':'All projects'),p.tag,p.title,p.tagline,p.meta,p.id==='vibefit'?'vibefit':(p.grp==='uni'||p.grp==='grad'?'udst':p.id));
   var hero=heroHTML(p);
   if(p.heroFirst){h+=stageHTML(p);hero=''}
   h+='<section class="pbody pb-first tx tx-l"><div class="wrap">';var visited=false;
@@ -2692,7 +2720,7 @@ function renderProject(p){
   (p.figs||[]).forEach(function(f){if(f.show){h+=showHTML({k:f.h,lead:f.lead||'',variant:'chart',auto:4000,items:f.items.map(function(x,i){return {img:x.img,k:(i<9?'0':'')+(i+1)+' / '+(f.items.length<10?'0':'')+f.items.length,t:x.t||'',d:x.cap}})});return}if(f.full){h+='<div class="ffig"><div class="ffig-h rv">'+(f.kick?'<span class="lab">'+esc(f.kick)+'</span>':'')+'<h3>'+esc(f.h)+'</h3>'+(f.lead?'<p>'+esc(f.lead)+'</p>':'')+'</div>'+f.items.map(function(x){return '<figure class="ffig-f rv"><img src="'+x.img+'" alt="'+esc(x.cap)+'" loading="lazy"><figcaption>'+esc(x.cap)+'</figcaption></figure>'}).join('')+'</div>';return}h+='<div class="prow rv"><h3>'+esc(f.h)+'</h3><div class="figs '+(f.gal?'gal':'c'+(f.cols||1))+'">'+f.items.map(function(x){return '<figure class="fig'+(x.wide?' wide':'')+(x.logo?' logo':' fx rv')+(x.cls?' '+x.cls:'')+'"><img src="'+x.img+'" alt="'+esc(x.cap)+'" loading="lazy"><figcaption>'+esc(x.cap)+'</figcaption></figure>'}).join('')+'</div></div>'});
   if(p.links&&p.links.length&&!visited)h+='<div class="visit rv"><span class="lab">Visit the live site</span><div class="vs-list">'+p.links.map(function(l){var d=l.url.replace(/^https?:\/\//,'').replace(/\/.*$/,'').replace(/^www\./,'');return '<a class="vs" href="'+l.url+'" target="_blank" rel="noopener"><span class="vs-k">'+esc(l.label)+'</span><b>'+esc(d)+'</b><i>'+ARR+'</i></a>'}).join('')+'</div></div>';
   h+='</div></section>';
-  h+=pager(p)+foot(p.int?'#internship':'#work',p.int?'Internship work':'All projects');
+  h+=pager(p)+foot(p.int?'#internship':(p.grp==='free'?'#freelance':'#work'),p.int?'Internship work':(p.grp==='free'?'Freelancing':'All projects'));
   document.getElementById('project').innerHTML=h;
 }
 function blendSections(root){var ss=[].slice.call(root.children).filter(function(e){return e.tagName==='SECTION'||e.tagName==='NAV'});
@@ -2826,7 +2854,7 @@ function observe(root){
   root.querySelectorAll('.clip:not(.in)').forEach(function(e){var par=e.parentElement;par._clip=e;io.observe(par)});
 }
 
-var curtain=document.getElementById('curtain'),busy=false,mode='home',secMap={top:'top',about:'about',experience:'experience',skills:'skills',certificates:'certificates',work:'work',contact:'contact'};
+var curtain=document.getElementById('curtain'),busy=false,mode='home',secMap={top:'top',about:'about',experience:'experience',skills:'skills',certificates:'certificates',work:'work',freelance:'freelance',contact:'contact'};
 function setCur(){}
 function wait(ms){return new Promise(function(r){setTimeout(r,ms)})}
 function setMode(m,key){
